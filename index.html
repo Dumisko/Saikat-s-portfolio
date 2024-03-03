@@ -9,42 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-body{
-    background-color: rgb(0, 0, 120);
-    color: white;
+ body{
     font-family: 'Poppins', sans-serif;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    background-color: blueviolet;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-}
-nav ul li{
-    list-style: none;
-    margin: 0 23px;
-}
-nav ul li a{
-    text-decoration: none;
+ }
+ footer{
+    /* margin-top: 50%; */
+    background-color: rgb(63, 63, 94);
     color: white;
+ }
+ .footer{
+    display: flex;
+padding: 13px 122px;
+    justify-content: space-evenly;
 }
-nav ul li a:hover{
-    
-    color: greenyellow;
-    font-size: 1.2rem;
+img{
+    height: 200px;
+    width: 200px;
 }
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width: 223px;
+}
+footer .footer-rights{
+    color: gray;
+    text-align: center;
+    padding: 12px 0;
+}
+
+
+
+
+
+
+
 .left{
     font-size: 2rem;
 }
@@ -57,9 +63,8 @@ nav ul li a:hover{
     width: 30%;
 }
 .leftsection{
-    /* background-color: red; */
     font-size: 3rem;
-    /* margin: 70px 0; */
+    
 }
 .leftsection .btn{
     padding: 12px;
@@ -129,151 +134,122 @@ top: 86px;
 position: relative;
 width: 150px;
 font-size: 9px;
-}   
-footer{
-    background-color: rgb(63, 63, 94);
-    /* height: 230px; */
-}
-.footer{
-    display: flex;
-    padding: 23px 122px;
-    justify-content: space-evenly;
-}
-.footer ul{
-    list-style: none;
-}
-.footer > div{
-    width: 223px;
-}
-footer .footer-rights{
-    color: gray;
-    text-align: center;
-    padding: 12px 0;
-}
+}  
+
 </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left">
-Saikat's Portfolio
-            </div>
-            <div class="right">
-<ul>
-   <li><a href="index.html">Home</a> </li>
-   <li><a href="about.html">About</a></li> 
-   <!-- <li><a href="/">Services</a></li> -->
-   <li><a href="projects.html">project</a></li> 
-   <li><a href="/">contact me</a></li>
-  
-</ul>
-            </div>
-        </nav>
-    </header>
-    <main>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1>Saikat</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media Profiles</a></li>
+                  <li><a class="dropdown-item" href="#">Dark Mode</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <main>
         <section class="firstsection">
-            <div class="leftsection">
-                Hi, my name is <span class="purple">Saikat</span> 
-                <div>
-                    and i am a passionate
+            
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <div class="leftsection">
+
+                        Hi, my name is <span class="purple">Saikat</span> 
+                        <div>
+                            and i am a passionate
+                        </div>
+                        <span id="element"></span>
+                        <div class="button">
+                            <button class="btn"><a href="">download resume</a> </button>
+                            <button class="btn"><a href="https://github.com/Dumisko">Visit github</a> </button>
+                        </div>
+                  </div>
+                  <div class="col">
+                    <div class="rightsection">
+                        <img src="custom-erp-software.png" alt="">
+                    </div>
+                  </div>
                 </div>
-                <span id="element"></span>
-                <div class="button">
-                    <button class="btn"><a href="">download resume</a> </button>
-                    <button class="btn"><a href="https://github.com/Dumisko">Visit github</a> </button>
-                </div>
-            </div>
-            <div class="rightsection">
-                <img src="custom-erp-software.png" alt="">
-            </div>
+              </div>
+
         </section>
-        <hr style="border: 0; background-color: red; height: 1px; margin: 40px 80px;">
-        <section class="secondsection">
-            <span class="gray"> what i have done so far</span>
-            <h1>work Experience</h1>
-            <div class="box">
-       <div class="vertical">
-        <img class="image-top" src="dev.png" alt="">
-        <div class="vertical-title">
-            html Developer(2023-2024)
-        </div>
-        <div class="vertical-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, animi?
-        </div>
-       </div>
-       <div class="vertical">
-        <img class="image-top" src="cpic.png" alt="">
-        <div class="vertical-title">
-            html Developer(2023-2024)
-        </div>
-        <div class="vertical-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, animi?
-        </div></div>
-       <div class="vertical">
-        <img class="image-top" src="dev.png" alt="">
-        <div class="vertical-title">
-            html Developer(2023-2024)
-        </div>
-        <div class="vertical-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, animi?
-        </div></div>
-       <div class="vertical">
-        <img class="image-top" src="dev.png" alt="">
-        <div class="vertical-title">
-            html Developer(2023-2024)
-        </div>
-        <div class="vertical-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, animi?
-        </div>
-       </div>
-            </div>
-        </section>
+
+
+    </section>
+    <hr style="border: 0; background-color: rgb(0, 0, 0); height: 1px; margin: 40px 80px;">
+    <section class="secondsection">
+        
+                <h1 style="text-align: center;">About Me</h1>
+              </div>
+             
+                <p>
+                    
+                    I am a passionate full stack web developer currently pursuing my undergraduate degree at Jalpaiguri Government Engineering College. With a strong foundation in data structures and algorithms, I have achieved 2 stars in CodeChef and solved over 270 problems on LeetCode, along with 200+ problems on GeeksforGeeks and Coding Ninjas. I have successfully completed 5 projects, showcasing my skills in web development. My journey in programming has been exciting, and I am eager to continue exploring new technologies and creating innovative solutions.
+                    
+                    </p>
+           
+    </section>
+    
     </main>
 
+
+
 <footer>
-    <div class="footer">
-        <div class="footer-first">
-            <h3>
+
+    <div class="grid text-center">
+        <div class="g-col-6"><div class="footer-first">
+            <h4>
                 Saikat's Developer Portfolio.
-            </h3>
-        </div>
-        <div class="footer-second">
+            </h4>
+        </div></div>
+        <div class="g-col-6"><div class="footer-second">
             <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>contact</li>
-                <li>Services</li>
-            </ul>
-        </div>
-        <div class="footer-third">
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>contact</li>
-                <li>Services</li>
-            </ul>
-        </div>
-        <div class="footer-fourth">
-            <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>contact</li>
-                <li>Services</li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-rights">
-   copyright  &#169   www.saikatshasmalportfolio.com | All rights reserved |
-    </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">project</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+             </ul>
+        </div></div>
+      
+        <div class="g-col-6"><div class="footer-rights">
+            copyright  &#169   www.saikatshasmalportfolio.com | All rights reserved |
+             </div> </div>
+      </div>
+
 </footer>
 
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer', 'Compititive Programmer'],
-          typeSpeed: 50,
+          strings: ['Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer','Web Developer', 'Compititive Programmer'],
+          typeSpeed: 70,
         });
       </script>
 </body>
